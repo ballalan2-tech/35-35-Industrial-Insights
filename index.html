@@ -64,29 +64,27 @@
             color: var(--secondary);
         }
 
-        .hero {
-            background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 100%);
+          .hero {
+            /* Loads the banner image as a background */
+            background: url('35-35-industrial-insights-banner.png') no-repeat center center;
+            background-size: cover;
+            padding: 220px 20px 140px 20px;
+            text-align: left; /* Aligns text left to mirror the emblem */
+            position: relative;
             color: white;
-            padding: 160px 20px 100px 20px;
-            text-align: center;
         }
 
         .hero-container {
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 550px; /* Constrains the width so it stays on the clean left side */
+            margin: 0 0 0 5%; /* Shifts the box to the left side of the graphic elements */
+            background-color: rgba(15, 23, 42, 0.88); /* Semi-transparent dark box for readability */
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            backdrop-filter: blur(4px); /* Premium soft-blur finish behind text */
         }
 
         .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        .hero p {
-            font-size: 1.25rem;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
 
         .cta-button {
             display: inline-block;
