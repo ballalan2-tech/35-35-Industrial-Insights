@@ -69,19 +69,21 @@
             background: url('35-35-industrial-insights-banner.png') no-repeat center center;
             background-size: cover;
             padding: 220px 20px 140px 20px;
-            text-align: left; /* Aligns text left to mirror the emblem */
+            text-align: left; 
             position: relative;
             color: white;
+            display: flex; /* Enables flexbox grid alignment */
+            justify-content: flex-end; /* Pushes the child box all the way to the right side */
         }
 
         .hero-container {
-            max-width: 550px; /* Constrains the width so it stays on the clean left side */
-            margin: 0 0 0 5%; /* Shifts the box to the left side of the graphic elements */
-            background-color: rgba(15, 23, 42, 0.88); /* Semi-transparent dark box for readability */
+            max-width: 550px; 
+            margin: 0 5% 0 0; /* Creates padding space away from the right edge of the screen */
+            background-color: rgba(15, 23, 42, 0.88); 
             padding: 40px;
             border-radius: 8px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-            backdrop-filter: blur(4px); /* Premium soft-blur finish behind text */
+            backdrop-filter: blur(4px); 
         }
 
         .hero h1 {
